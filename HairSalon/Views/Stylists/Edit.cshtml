@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist;
+
+<h1>Edit Stylist: @Model.Name</h1>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.StylistId)
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+  @Html.LabelFor(model => model.Style)
+  @Html.TextBoxFor(model => model.Style)
+  @Html.LabelFor(model => model.Schedule)
+  @Html.TextBoxFor(model => model.Schedule)
+  <input type="submit" value="Edit" class="btn btn-success">
+}
+
+<button class="btn btn-dark">@Html.ActionLink("Return to ", "Details", new { id = Model.StylistId })@Model.Name</button>

@@ -1,4 +1,3 @@
-using HairSalon.Models;
 
 namespace HairSalon.Models
 {

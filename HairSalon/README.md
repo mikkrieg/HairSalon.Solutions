@@ -33,6 +33,17 @@ _This a program built for a salon owner. It allows the owner to create a list of
 * _Inside your appsettings.json, create a connection to the database you will be using_
   * _It will look similar to this: { "ConnectionStrings": { "DefaultConnection": "Server=localhost;Port=3306;database=(database_name_here);uid=(user_name_here));pwd=(your_password_here);" Leave out all parenthesis, they are for example purposes only_
 * _Using MySQL workbench or another database management program that utilizes MySQL, import the .sql file to recreate the tables and columns necessary_
+
+  _**For MySQL workbench:**_ 
+  1. _log in to your workbench_
+  2. _Select the administration tab in the navigator window_
+  3. _Select "Data Import/Restore"_
+  4. _In the import options select "Import from self-contained file"_
+  5. _Select mikey_kriegel.sql_
+  6. _Under "Default Schema to be imported to" select the "New" button_
+  7. _Enter the name you would like for your database and select ok_
+  8. _Select the Schemas tab and click the refresh icon in the top right corner or right click on the window and select Refresh All_
+  9. _Your version of the project database should appear in this Schemas window_
 * _To run the program, navigate to the HairSalon directory and enter the command "dotnet run" in the terminal_
   * _To run the program with a watcher, use the command "dotnet watch run" in the terminal_
 * _Type the url localhost:5000 (or whatever port you have configured) in a browser to view the project_

@@ -19,7 +19,7 @@ else
   <ol>
   @foreach (Client client in Model.Clients)
   {
-    <li>$"{client.Name}")</li>
+    <li>@client.Name</li>
   }
   </ol>
 }
@@ -28,5 +28,4 @@ else
 <button class="btn btn-dark">@Html.ActionLink("Return to stylists", "Index")</button>
 <button class="btn btn-dark">@Html.ActionLink("Edit stylist", "Edit", new { id = Model.StylistId })</button>
 <button class="btn btn-dark">@Html.ActionLink("Delete stylist", "Delete", new { id = Model.StylistId })</button>
-<button class="btn btn-dark">@Html.ActionLink("Add client", "Create", "Clients")</button>
 

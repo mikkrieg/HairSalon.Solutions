@@ -43,7 +43,7 @@ _This a program built for a salon owner. It allows the owner to create a list of
   6. _Under "Default Schema to be imported to" select the "New" button_
   7. _Enter the name you would like for your database and select ok_
   8. _Select the Schemas tab and click the refresh icon in the top right corner or right click on the window and select Refresh All_
-  9. _Your version of the project database should appear in this Schemas window_
+  9. _Your version of the project database should appear in the Schemas window_
 * _To run the program, navigate to the HairSalon directory and enter the command "dotnet run" in the terminal_
   * _To run the program with a watcher, use the command "dotnet watch run" in the terminal_
 * _Type the url localhost:5000 (or whatever port you have configured) in a browser to view the project_

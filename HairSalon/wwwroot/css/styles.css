@@ -1,0 +1,27 @@
+body {
+  background-color: #5fc2bb;
+}
+
+footer {
+  position:fixed;
+  bottom:0;
+  left: 45%;
+  width:100%;
+  color:#000;
+  padding:8px;
+}
+
+button>a, a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+li>a {
+  color: #000;
+  font-size: 2em;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 8%;
+}

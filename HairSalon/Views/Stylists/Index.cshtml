@@ -1,23 +1,37 @@
 @{
   Layout = "_Layout";
 }
+<link href="~/css/stylist.css" rel="stylesheet" type="text/css">
 
 @using HairSalon.Models;
 @model List<HairSalon.Models.Stylist>;
 <h1>All Stylists</h1>
 @if(Model.Count == 0)
 {
-  <h3>No Stylists have been added yet</h3>
+  <h3 class="text-center">No Stylists have been added yet</h3>
 }
 
-@foreach(Stylist stylist in Model)
-{
-  <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
-}
+<div class="row">
+  <div class="col-4 offset-4">
+    <ul>
+      @foreach(Stylist stylist in Model)
+      {
+        <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
+      }
+    </ul>
+  </div>
+</div>
 
-<button class="btn btn-dark">@Html.ActionLink("Add stylist", "Create")</button>
 
-@if(Model.Count > 0)
-{
-  <button class="btn btn-dark">@Html.ActionLink("Create clients", "Create", "Clients")</button>
-}
+<div class="row">
+  <div class="col-2 offset-4">
+    <button class="btn btn-dark" id="addStylist">@Html.ActionLink("Add stylist", "Create")</button>
+  </div>
+  
+    @if(Model.Count > 0)
+    { <div class="col-2">
+        <button class="btn btn-dark">@Html.ActionLink("Add client", "Create", "Clients")</button>
+      </div>
+    }
+</div>
+

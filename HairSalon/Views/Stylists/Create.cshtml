@@ -1,19 +1,23 @@
 @{
   Layout = "_Layout";
 }
+<link href="~/css/stylist-creation.css" rel="stylesheet" type="text/css">
 
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist;
 <h1>Add Stylist</h1>
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
-  @Html.LabelFor(model => model.Style)
-  @Html.TextBoxFor(model => model.Style, new { @class = "form-control" })
-  @Html.LabelFor(model => model.Schedule)
-  @Html.TextBoxFor(model => model.Schedule, new { @class = "form-control" })
-  <input type="submit" value="Create" class="btn btn-success">
-}
-
+<div class="row">
+  <div class="col-6 offset-3">
+    @using (Html.BeginForm())
+    {
+      @Html.LabelFor(model => model.Name)
+      @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+      @Html.LabelFor(model => model.Style)
+      @Html.TextBoxFor(model => model.Style, new { @class = "form-control" })
+      @Html.LabelFor(model => model.Schedule)
+      @Html.TextBoxFor(model => model.Schedule, new { @class = "form-control" })
+      <input type="submit" value="Create" class="btn btn-success" id="createStylist">
+    }
+  </div>
+</div>
 <button class="btn btn-dark">@Html.ActionLink("Return to stylists", "Index")</button>

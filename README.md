@@ -51,7 +51,7 @@ _This a program built for a salon owner. It allows the owner to create a list of
 
 ## Known Bugs
 
-* _No Known Bugs_
+* _Styling is not responsive for large or small screens_
 
 ## License
 

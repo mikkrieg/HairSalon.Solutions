@@ -1,0 +1,21 @@
+h3 {
+  margin-top: 6%;
+}
+
+.btn {
+  display: block;
+  margin-top: 3%;
+  margin-left: 15%;
+  padding: 15px 30px;
+  border-radius: 25%;
+}
+
+ul {
+  margin-top: 10%;
+  list-style-type: none;
+  margin-bottom: 5%;
+}
+
+li {
+  text-align: center;
+}

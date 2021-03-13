@@ -25,8 +25,6 @@ _This a program built for a salon owner. It allows the owner to create a list of
 ### Local Machine
 * _Clone this repository to your machine_
 * _Navigate to the top level directory_
-* _Create a .gitignore file_
-* _Inside the git ignore add */bin/, */obj/ and */appsettings.json_
 * _Navigate to the HairSalon directory (project directory)_
 * _In the terminal, within this directory, enter the terminal commands "dotnet restore and dotnet build"_
 * _Create an appsettings.json file_

@@ -1,21 +1,25 @@
 @{
   Layout = "_Layout";
 }
+<link href="~/css/stylist-edit.css" rel="stylesheet" type="text/css">
 
 @model HairSalon.Models.Stylist;
 
 <h1>Edit Stylist: @Model.Name</h1>
-
-@using (Html.BeginForm())
-{
-  @Html.HiddenFor(model => model.StylistId)
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  @Html.LabelFor(model => model.Style)
-  @Html.TextBoxFor(model => model.Style)
-  @Html.LabelFor(model => model.Schedule)
-  @Html.TextBoxFor(model => model.Schedule)
-  <input type="submit" value="Edit" class="btn btn-success">
-}
+<div class="row">
+  <div class="col-6 offset-3">
+    @using (Html.BeginForm())
+    {
+      @Html.HiddenFor(model => model.StylistId)
+      @Html.LabelFor(model => model.Name)
+      @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+      @Html.LabelFor(model => model.Style)
+      @Html.TextBoxFor(model => model.Style, new { @class = "form-control" })
+      @Html.LabelFor(model => model.Schedule)
+      @Html.TextBoxFor(model => model.Schedule, new { @class = "form-control" })
+      <input type="submit" value="Edit" class="btn btn-success">
+    }
+  </div>
+</div>
 
 <button class="btn btn-dark">@Html.ActionLink("Return to stylist", "Details", new { id = Model.StylistId })</button>

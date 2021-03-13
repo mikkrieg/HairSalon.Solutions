@@ -50,6 +50,7 @@ _This a program built for a salon owner. It allows the owner to create a list of
 ## Known Bugs
 
 * _Styling is not responsive for large or small screens_
+* _Still figuring out how to style select box in client creation page_
 
 ## License
 

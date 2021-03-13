@@ -11,11 +11,11 @@
     @using (Html.BeginForm())
     {
       @Html.LabelFor(model => model.Name)
-      @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+      @Html.TextBoxFor(model => model.Name, new { @class = "form-control", required="required" })
       @Html.LabelFor(model => model.Style)
-      @Html.TextBoxFor(model => model.Style, new { @class = "form-control" })
+      @Html.TextBoxFor(model => model.Style, new { @class = "form-control", required="required" })
       @Html.LabelFor(model => model.Schedule)
-      @Html.TextBoxFor(model => model.Schedule, new { @class = "form-control" })
+      @Html.TextBoxFor(model => model.Schedule, new { @class = "form-control", required="required" })
       <input type="submit" value="Create" class="btn btn-success" id="createStylist">
     }
   </div>

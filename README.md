@@ -24,10 +24,9 @@ _This a program built for a salon owner. It allows the owner to create a list of
 
 ### Local Machine
 * _Clone this repository to your machine_
-* _Navigate to the top level directory_
 * _Navigate to the HairSalon directory (project directory)_
-* _In the terminal, within this directory, enter the terminal commands "dotnet restore and dotnet build"_
-* _Create an appsettings.json file_
+* _In the terminal, within this directory, enter the terminal commands "dotnet restore" and "dotnet build"_
+* _Create an appsettings.json file within the HairSalon directory_
 * _Inside your appsettings.json, create a connection to the database you will be using_
   * _It will look similar to this: { "ConnectionStrings": { "DefaultConnection": "Server=localhost;Port=3306;database=(database_name_here);uid=(user_name_here));pwd=(your_password_here);" Leave out all parenthesis, they are for example purposes only_
 * _Using MySQL workbench or another database management program that utilizes MySQL, import the .sql file to recreate the tables and columns necessary_
@@ -37,7 +36,7 @@ _This a program built for a salon owner. It allows the owner to create a list of
   2. _Select the administration tab in the navigator window_
   3. _Select "Data Import/Restore"_
   4. _In the import options select "Import from self-contained file"_
-  5. _Select mikey_kriegel.sql_
+  5. _Select michael_kriegel.sql_
   6. _Under "Default Schema to be imported to" select the "New" button_
   7. _Enter the name you would like for your database and select ok_
   8. _Select the Schemas tab and click the refresh icon in the top right corner or right click on the window and select Refresh All_
